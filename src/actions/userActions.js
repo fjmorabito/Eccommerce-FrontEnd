@@ -21,4 +21,5 @@ export const signout = () => (dispatch) => {
     localStorage.removeItem('userInfo');
     localStorage.removeItem('cartItems');
     dispatch({ type: USER_SIGNOUT });
+    document.location.reload();
 };
